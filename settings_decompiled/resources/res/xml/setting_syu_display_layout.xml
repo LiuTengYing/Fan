@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="80dp" android:layout_marginEnd="60dp">
+    <RelativeLayout android:background="@drawable/split_page_item_bk" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="?android:attr/listPreferredItemPaddingStart" android:paddingEnd="?android:attr/listPreferredItemPaddingEnd">
+        <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backglight_brightness_controller"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:ellipsize="marquee" android:id="@+id/backglight_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/split_page_item_bk" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="20sp" android:id="@+id/backlight_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <CheckBox android:textSize="20sp" android:id="@+id/backlight_time_auto" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="日落至日出" android:layout_below="@+id/backlight_title"/>
+        <CheckBox android:textSize="20sp" android:id="@+id/backlight_time_custom" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="自定义调整" android:layout_below="@+id/backlight_time_auto"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/backlight_time_adjust" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/backlight_time_custom">
+            <TextView android:textSize="20sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置时间段"/>
+            <TextView android:id="@+id/time_start" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <com.android.settings.display.syudisplay.TimePicker android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/backlight_time_adjust" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

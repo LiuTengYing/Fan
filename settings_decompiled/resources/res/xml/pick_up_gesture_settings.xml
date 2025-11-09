@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" android:title="@string/ambient_display_pickup_title">
+    <com.android.settingslib.widget.IllustrationPreference android:key="gesture_pick_up_video" settings:lottie_rawRes="@raw/lottie_lift_to_check_phone" settings:searchable="false"/>
+    <SwitchPreference android:title="@string/ambient_display_pickup_title" android:key="gesture_pick_up" android:summary="@string/ambient_display_pickup_summary" settings:controller="com.android.settings.gestures.PickupGesturePreferenceController" settings:keywords="@string/keywords_gesture"/>
+</PreferenceScreen>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="20sp" android:textColor="@color/title_text_color" android:gravity="center_horizontal" android:id="@+id/fan_set_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="20dp"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="18dp" android:layout_height="wrap_content" android:src="@drawable/cpu_temp_icon" android:scaleType="fitCenter"/>
+        <TextView android:textSize="20sp" android:textColor="@color/title_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="CPU :"/>
+        <TextView android:textSize="20sp" android:textColor="@color/cpu_temp_low" android:layout_gravity="center_vertical" android:id="@+id/fan_set_current_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="54"/>
+        <TextView android:textSize="15sp" android:textColor="@color/title_text_color" android:gravity="bottom" android:layout_gravity="center_vertical" android:id="@+id/fan_set_temp_unit" android:paddingTop="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text="℃"/>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:paddingLeft="40dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/fan_set_anim" android:layout_alignTop="@+id/fan_set_anim" android:layout_alignBottom="@+id/fan_set_anim">
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/fan_set_open_layout" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_marginTop="10dp" android:layout_weight="1">
+                <CheckBox android:layout_gravity="center_vertical" android:id="@+id/fan_set_open" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_style"/>
+                <TextView android:textSize="18sp" android:textColor="@color/title_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/fan_set_open"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/fan_set_close_layout" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+                <CheckBox android:layout_gravity="center_vertical" android:id="@+id/fan_set_close" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_style"/>
+                <TextView android:textSize="18sp" android:textColor="@color/title_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/fan_set_close"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/fan_set_auto_layout" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_marginBottom="20dp" android:layout_weight="1">
+                <CheckBox android:layout_gravity="center_vertical" android:id="@+id/fan_set_auto" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_style"/>
+                <TextView android:textSize="18sp" android:textColor="@color/title_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:maxWidth="100dp" android:text="@string/fan_set_auto"/>
+                <com.android.settings.widget.view.TextSeekBarCenter android:layout_gravity="center_vertical" android:id="@+id/fan_set_temp_seek" android:layout_width="0dp" android:layout_height="40dp" android:layout_marginLeft="20dp" android:layout_marginRight="40dp" android:layout_weight="1" app:progressDrawable="@drawable/seek_progressbk" app:progressDrawableHeight="5dp" app:textBgHeight="0dp" app:textColor="#000000" app:textMax="55" app:textMin="0" app:textSize="12sp" app:thumb="@drawable/seek_thumb_white" app:thumbHeight="24dp" app:thumbWidth="24dp"/>
+                <TextView android:textSize="16sp" android:textColor="@color/title_text_color" android:gravity="left" android:layout_gravity="center_vertical" android:id="@+id/fan_set_auto_temp" android:layout_width="80dp" android:layout_height="wrap_content" android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/fan_set_anim" android:background="@drawable/fan_set_anim" android:layout_width="400px" android:layout_height="400px" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

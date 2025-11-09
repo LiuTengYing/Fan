@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 应用信息 -->
+    <string name="app_name">风扇控制</string>
+    
+    <!-- 温度显示 -->
+    <string name="cpu_temperature_initial">CPU: 49.1℃</string>
+    <string name="cpu_temperature_text">CPU: %.1f℃</string>
+    <string name="cpu_temperature">CPU: %1$s℃</string>
+    <string name="cpu_temperature_na">CPU: 无数据</string>
+    
+    <!-- 模式控制 -->
+    <string name="auto_mode_enabled">自动模式已开启</string>
+    <string name="auto_mode_disabled">自动模式已关闭</string>
+    <string name="device_auto_mode_on">设备自动模式已开启</string>
+    <string name="device_auto_mode_off">设备自动模式已关闭</string>
+    <string name="switched_to_celsius">已切换至摄氏度</string>
+    <string name="switched_to_fahrenheit">已切换至华氏度</string>
+    
+    <!-- 风扇控制 -->
+    <string name="failed_to_switch_mode">切换模式失败</string>
+    <string name="failed_to_control_fan">风扇控制失败</string>
+    
+    <!-- 温度阈值 -->
+    <string name="temperature_threshold_hint">当温度达到%1$s时，自动模式下风扇将自动开启\n长按可修改阈值</string>
+    <string name="set_temperature_threshold">设置温度阈值</string>
+    <string name="enter_celsius_value">请输入摄氏度数值</string>
+    <string name="enter_fahrenheit_value">请输入华氏度数值</string>
+    <string name="temperature_threshold_updated">温度阈值已更新并同步到设备</string>
+    <string name="temperature_threshold_synchronized">温度阈值已同步：%1$s°C</string>
+    <string name="failed_sync_temperature_threshold">温度阈值同步失败</string>
+    <string name="please_enter_valid_number">请输入有效数字</string>
+    
+    <!-- 对话框按钮 -->
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    
+    <!-- 设备状态 -->
+    <string name="device_running">运行中</string>
+    <string name="device_stopped">已停止</string>
+    <string name="device_control_detected">检测到设备控制，退出手动模式</string>
+    
+    <!-- 无障碍描述 -->
+    <string name="fan_back_cover_desc">风扇背盖</string>
+    <string name="fan_light_desc">风扇指示灯</string>
+    <string name="fan_blades_desc">风扇叶片</string>
+    <string name="fan_front_cover_desc">风扇前盖</string>
+    <string name="indicator_light_desc">状态指示灯</string>
+    <string name="left_switch_base_desc">左开关底座</string>
+    <string name="left_switch_desc">左开关</string>
+    <string name="right_switch_base_desc">右开关底座</string>
+    <string name="right_switch_desc">右开关</string>
+    <string name="auto_switch_base_desc">自动开关底座</string>
+    <string name="auto_switch_desc">自动开关</string>
+    <string name="left_arrow_desc">左箭头</string>
+    <string name="right_arrow_desc">右箭头</string>
+    <string name="hint_button_desc">提示按钮</string>
+    <string name="auto_mode_switch_desc">自动模式开关</string>
+    <string name="temp_unit_switch_desc">温度单位切换</string>
+</resources>

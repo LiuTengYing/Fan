@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="fill_vertical" android:id="@+id/scroll" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/image_view" android:layout_width="match_parent" android:layout_height="200dp" android:src="@drawable/color_contrast" android:scaleType="fitXY"/>
+        <TextView android:textAppearance="@android:style/TextAppearance.Material.Title" android:paddingTop="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contrast_title" android:paddingStart="12dp"/>
+        <View android:background="@color/summary_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_margin="12dp"/>
+        <RadioGroup android:id="@+id/radio_group_contrast" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:textAppearance="@android:style/TextAppearance.Material.Subhead" android:id="@+id/automatic_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/automatic_contrast" android:paddingStart="12dp" android:layout_marginStart="12dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/automatic_contrast_summary" android:paddingStart="54dp"/>
+            <View android:background="@color/summary_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_margin="12dp"/>
+            <RadioButton android:textAppearance="@android:style/TextAppearance.Material.Subhead" android:id="@+id/increased_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/increased_contrast" android:paddingStart="12dp" android:layout_marginStart="12dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/increased_contrast_summary" android:paddingStart="54dp"/>
+            <View android:background="@color/summary_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_margin="12dp"/>
+            <RadioButton android:textAppearance="@android:style/TextAppearance.Material.Subhead" android:id="@+id/standard_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/standard" android:paddingStart="12dp" android:layout_marginStart="12dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/standard_summary" android:paddingStart="54dp"/>
+        </RadioGroup>
+        <TextView android:textAppearance="@android:style/TextAppearance.Material.Title" android:paddingTop="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_title" android:paddingStart="12dp"/>
+        <View android:background="@color/summary_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_margin="12dp"/>
+        <com.android.settings.display.ColorPickerView android:layout_gravity="center" android:id="@+id/main_colorPickerView" android:layout_width="205dp" android:layout_height="205dp"/>
+        <RadioGroup android:id="@+id/radio_group_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:textAppearance="@android:style/TextAppearance.Material.Subhead" android:id="@+id/color_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_standard" android:paddingStart="12dp" android:layout_marginStart="12dp"/>
+            <RadioButton android:textAppearance="@android:style/TextAppearance.Material.Subhead" android:id="@+id/color_warm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_warm" android:paddingStart="12dp" android:layout_marginStart="12dp"/>
+            <RadioButton android:textAppearance="@android:style/TextAppearance.Material.Subhead" android:id="@+id/color_cool" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/color_cool" android:paddingStart="12dp" android:layout_marginStart="12dp"/>
+        </RadioGroup>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.android.settings.widget.SettingsMainSwitchBar android:id="@+id/switch_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <androidx.core.widget.NestedScrollView android:scrollbarThumbVertical="@drawable/nest_scroll_view_style" android:paddingBottom="20dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="com.android.settings.widget.HomepageAppBarScrollingViewBehavior">
+        <FrameLayout android:id="@+id/main_content" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    </androidx.core.widget.NestedScrollView>
+    <RelativeLayout android:id="@+id/button_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0">
+        <Button android:id="@+id/back_button" android:layout_width="150dp" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="@android:string/car_loading_profile" android:layout_alignParentStart="true"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+            <Button android:id="@+id/skip_button" android:visibility="gone" android:layout_width="150dp" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="0x1040876"/>
+            <Button android:id="@+id/next_button" android:layout_width="150dp" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="@android:string/permdesc_useBiometric"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

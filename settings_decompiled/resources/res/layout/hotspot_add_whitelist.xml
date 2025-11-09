@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/dialog_scrollview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fadeScrollbars="false" android:scrollIndicators="bottom|top">
+    <LinearLayout android:orientation="vertical" android:id="@+id/l_wifidialog" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/wifi_item">
+        <TextView android:id="@+id/hotspot_name_txt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/hotspot_name_txt" style="@style/wifi_item_label"/>
+        <EditText android:id="@+id/nameText" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="32" android:inputType="textNoSuggestions" style="@style/wifi_item_edit_content"/>
+        <TextView android:id="@+id/hotspot_mac_txt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/hotspot_mac_txt" style="@style/wifi_item_label"/>
+        <com.android.settings.widget.MacAddressEditText android:id="@+id/macText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="4dp"/>
+    </LinearLayout>
+</ScrollView>

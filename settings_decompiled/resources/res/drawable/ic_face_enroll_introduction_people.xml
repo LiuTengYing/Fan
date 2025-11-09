@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/res_0x7f080018_ic_face_enroll_introduction_people__0">
+    <target android:name="time_group" android:animation="@drawable/res_0x7f080019_ic_face_enroll_introduction_people__1"/>
+</animated-vector>

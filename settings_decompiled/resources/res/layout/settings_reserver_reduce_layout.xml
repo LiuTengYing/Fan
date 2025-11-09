@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/split_page_item_bk" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="?android:attr/listPreferredItemPaddingEnd" android:minHeight="?android:attr/listPreferredItemHeightSmall" android:paddingStart="?android:attr/listPreferredItemPaddingStart">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="18sp" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_reverse_mute" android:singleLine="true" android:layout_centerVertical="true"/>
+        <Switch android:gravity="center_vertical" android:id="@+id/reserver_sound_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/reserver_sound_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp">
+        <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="18sp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/common_reversesound_lower" android:singleLine="true" android:layout_weight="1"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="40dp" android:layout_weight="3">
+            <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="16sp" android:gravity="right" android:id="@+id/reserver_reduce_min" android:visibility="gone" android:layout_width="20dp" android:layout_height="wrap_content" android:text="0"/>
+            <com.android.settings.widget.view.TextSeekBar android:layout_gravity="center_vertical" android:id="@+id/reserver_reduce_seek" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_weight="1" app:progressDrawable="@drawable/seek_progressbk" app:progressDrawableHeight="5dp" app:textBgHeight="10dp" app:textColor="#000000" app:textMax="20" app:textMin="0" app:textPaddingTop="13dp" app:textSize="14sp" app:thumb="@drawable/seek_thumb_white" app:thumbHeight="24dp" app:thumbWidth="24dp"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="18sp" android:gravity="center" android:id="@+id/reserver_reduce_max" android:layout_width="40dp" android:layout_height="wrap_content" android:text="20"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

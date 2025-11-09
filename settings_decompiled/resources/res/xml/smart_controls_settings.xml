@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="@string/smart_controls" android:key="smart_controls">
+    <com.android.settings.widget.SmartSwitchPreference android:persistent="false" android:title="@string/smart_wake" android:key="smart_wake" android:summary="@string/smart_wake_summary"/>
+    <com.android.settings.widget.SmartSwitchPreference android:persistent="false" android:title="@string/ambient_display_pickup_title" android:key="smart_pick_up" android:summary="@string/ambient_display_pickup_summary"/>
+    <Preference android:title="@string/smart_motion" android:key="smart_motion" android:summary="@string/smart_motion_summary" android:fragment="com.unisoc.settings.smartcontrols.SmartMotionFragment"/>
+    <Preference android:title="@string/pocket_mode" android:key="pocket_mode" android:summary="@string/pocket_mode_summary" android:fragment="com.unisoc.settings.smartcontrols.PocketModeFragment"/>
+    <Preference android:title="@string/gesture" android:key="gesture_recognition" android:summary="@string/gesture_summary" android:fragment="com.unisoc.settings.smartcontrols.GestureRecognitionFragment"/>
+</PreferenceScreen>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:background="@drawable/split_page_item_bk" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="80dp" android:layout_marginTop="5dp" android:layout_marginRight="60dp" android:layout_marginBottom="5dp" android:minHeight="?android:attr/listPreferredItemHeightSmall" android:paddingStart="?android:attr/listPreferredItemPaddingStart" android:paddingEnd="?android:attr/listPreferredItemPaddingEnd">
+    <include layout="@layout/settingslib_icon_frame"/>
+    <RelativeLayout android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="18sp" android:ellipsize="marquee" android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:hyphenationFrequency="3"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceListItemSecondary" android:textColor="?android:attr/textColorSecondary" android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="10" android:layout_below="@android:id/title" android:layout_alignStart="@android:id/title" android:hyphenationFrequency="3"/>
+    </RelativeLayout>
+    <include layout="@layout/preference_two_target_divider"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="18sp" android:ellipsize="marquee" android:gravity="end|center_vertical" android:id="@+id/state_two_target_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="400dp" android:singleLine="true"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@android:id/widget_frame" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="@dimen/two_target_min_width"/>
+</LinearLayout>

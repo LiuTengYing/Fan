@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/settings_homepage_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:scrollbarThumbVertical="@drawable/nest_scroll_view_style" android:id="@+id/main_content_scrollable_container" android:paddingBottom="20dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="2dp" app:layout_behavior="com.android.settings.widget.HomepageAppBarScrollingViewBehavior">
+        <LinearLayout android:orientation="vertical" android:id="@+id/homepage_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@+id/suggestion_container_two_pane" android:visibility="gone" layout="@layout/suggestion_container_two_pane"/>
+            <FrameLayout android:id="@+id/contextual_cards_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/contextual_card_side_margin" android:layout_marginEnd="@dimen/contextual_card_side_margin"/>
+            <FrameLayout android:id="@+id/main_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="32dp" android:id="@+id/setting_top_title" android:paddingLeft="40dp" android:paddingTop="15dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dashboard_title"/>
+    <ImageView android:layout_gravity="end" android:background="@drawable/top_split_line" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="20dp" android:layout_marginBottom="40dp"/>
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:touchscreenBlocksFocus="false" android:keyboardNavigationCluster="false">
+        <LinearLayout android:orientation="vertical" android:id="@+id/app_bar_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="exitUntilCollapsed|scroll">
+            <include android:id="@+id/homepage_app_bar_regular_phone_view" layout="@layout/settings_homepage_app_bar_regular_phone_layout"/>
+            <include android:id="@+id/homepage_app_bar_two_pane_view" android:visibility="gone" layout="@layout/settings_homepage_app_bar_two_pane_layout"/>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

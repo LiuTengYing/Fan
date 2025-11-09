@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/split_page_item_bk" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="?android:attr/listPreferredItemHeightSmall" android:paddingStart="?android:attr/listPreferredItemPaddingStart" android:paddingEnd="?android:attr/listPreferredItemPaddingEnd">
+    <RelativeLayout android:id="@+id/backlight_title_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="18sp" android:id="@+id/backlight_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backglight_brightness_controller"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="18sp" android:id="@+id/backlight_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backlight_control_lamp" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/backlight_time_auto_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/backlight_title_layout">
+        <CheckBox android:textSize="18sp" android:id="@+id/backlight_time_auto" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:button="@drawable/checkbox_style" android:text="@string/backlight_controller_auto"/>
+        <ImageView android:background="#19000000" android:paddingLeft="20dp" android:paddingRight="20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp" android:layout_below="@+id/backlight_time_auto"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/backlight_time_auto_seek" android:paddingLeft="20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="140dp" android:layout_below="@+id/backlight_time_auto" android:layout_centerHorizontal="true">
+            <com.android.settings.display.syudisplay.ColorArcProgressBar android:id="@+id/seek_sundown" android:layout_width="100dp" android:layout_height="50dp" android:layout_weight="1" app:back_color="@color/sun_progress_bk" app:back_width="5dp" app:bk="@color/sun_progress_bk" app:front_color1="#e3cea5" app:front_color2="#f2b01e" app:front_color3="#f79304" app:front_width="5dp" app:is_need_content="false" app:is_need_title="false" app:is_need_unit="false" app:max_value="100" app:seek_bar_thumb="@drawable/thumb_sundown" app:total_engle="140"/>
+            <com.android.settings.display.syudisplay.ColorArcProgressBar android:id="@+id/seek_sunrise" android:layout_width="100dp" android:layout_height="50dp" android:layout_weight="1" app:back_color="@color/sun_progress_bk" app:back_width="5dp" app:bk="@color/sun_progress_bk" app:front_color1="#e3cea5" app:front_color2="#f2b01e" app:front_color3="#f79304" app:front_width="5dp" app:is_need_content="false" app:is_need_title="false" app:is_need_unit="false" app:max_value="100" app:seek_bar_thumb="@drawable/thumb_sunrise" app:total_engle="140"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/backlight_suntime_ly" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_below="@+id/backlight_time_auto_seek">
+            <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="24sp" android:gravity="center" android:layout_gravity="center" android:id="@+id/backlight_sundown_time_tv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="24sp" android:gravity="center" android:layout_gravity="center" android:id="@+id/backlight_sunrise_time_tv" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/backlight_control_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/backlight_time_auto_layout">
+        <CheckBox android:textSize="18sp" android:id="@+id/backlight_time_custom" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:button="@drawable/checkbox_style" android:text="@string/backlight_controller_custom"/>
+        <ImageView android:id="@+id/time_auto_line" android:background="#19000000" android:paddingLeft="20dp" android:paddingRight="20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp" android:layout_below="@+id/backlight_time_custom"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/time_auto_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_below="@+id/time_auto_line">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:textColor="@color/title_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_period_setting"/>
+                <RelativeLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/time_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_centerHorizontal="true">
+                    <TextView android:textSize="18sp" android:textColor="@color/time_controller_text_color" android:id="@+id/time_start_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backlight_start_time"/>
+                    <TextView android:textSize="18sp" android:textColor="@color/time_controller_text_color" android:id="@+id/time_end_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backlight_end_time" android:layout_toRightOf="@+id/time_start_tv"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="18sp" android:textColor="@color/title_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backlight_start_time"/>
+                    <com.android.settings.display.syudisplay.TimePicker android:id="@+id/backlight_time_picker_sundown" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="18sp" android:textColor="@color/title_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backlight_end_time"/>
+                    <com.android.settings.display.syudisplay.TimePicker android:id="@+id/backlight_time_picker_sunrise" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

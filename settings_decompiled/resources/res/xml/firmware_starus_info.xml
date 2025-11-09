@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" android:title="@string/settings_about_state_info" android:key="firmware_version_screen" settings:keywords="@string/keywords_android_version">
+    <Preference android:title="@string/wifi_ip_address" android:key="wifi_ip_address" android:summary="@string/summary_placeholder" android:order="44" settings:enableCopying="true"/>
+    <Preference android:title="@string/status_wifi_mac_address" android:key="saved_accesspoints_wifi_mac_address" android:summary="@string/view_saved_network" android:order="45" android:fragment="com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2" settings:enableCopying="false"/>
+    <Preference android:title="@string/status_bt_address" android:key="bt_address" android:summary="@string/summary_placeholder" android:order="47" settings:enableCopying="true"/>
+    <Preference android:title="@string/status_up_time" android:selectable="false" android:key="up_time" android:summary="@string/summary_placeholder" android:order="48"/>
+</PreferenceScreen>

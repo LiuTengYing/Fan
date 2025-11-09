@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="40dp" android:layout_marginTop="20dp" android:layout_marginRight="40dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.android.settings.gps.view.JSatelliteView android:id="@+id/gps_statellite_view" android:layout_width="275dp" android:layout_height="275dp" android:layout_marginTop="60dp"/>
+        <RelativeLayout android:gravity="center_horizontal" android:id="@+id/gps_num_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/gps_statellite_view">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/gps_total_num_ly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <LinearLayout android:gravity="center" android:background="@drawable/gps_num_bk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                    <ImageView android:id="@+id/gps_total_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gps_num_1"/>
+                    <ImageView android:id="@+id/gps_total_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gps_num_1"/>
+                </LinearLayout>
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="18sp" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gps_total_num_title"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerHorizontal="true">
+                <LinearLayout android:gravity="center" android:background="@drawable/gps_num_bk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                    <ImageView android:id="@+id/gps_useful_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gps_num_2"/>
+                    <ImageView android:id="@+id/gps_useful_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gps_num_2"/>
+                </LinearLayout>
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="18sp" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gps_useful_num_title"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="25dp" android:layout_toRightOf="@+id/gps_statellite_view" android:layout_below="@+id/gps_num_layout" android:layout_alignBottom="@+id/gps_statellite_view">
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_strength_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <com.android.settings.gps.view.JSatelliteProgBar android:id="@+id/gps_progress_1" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_progress_1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/gps_type_view_1" android:visibility="invisible" android:layout_width="30px" android:layout_height="30px" android:src="@drawable/set_satellite_bd"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_strength_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <com.android.settings.gps.view.JSatelliteProgBar android:id="@+id/gps_progress_2" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_progress_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/gps_type_view_2" android:visibility="invisible" android:layout_width="30px" android:layout_height="30px" android:src="@drawable/set_satellite_bd"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_strength_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <com.android.settings.gps.view.JSatelliteProgBar android:id="@+id/gps_progress_3" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_progress_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/gps_type_view_3" android:visibility="invisible" android:layout_width="30px" android:layout_height="30px" android:src="@drawable/set_satellite_bd"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_strength_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <com.android.settings.gps.view.JSatelliteProgBar android:id="@+id/gps_progress_4" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_progress_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/gps_type_view_4" android:visibility="invisible" android:layout_width="30px" android:layout_height="30px" android:src="@drawable/set_satellite_bd"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_strength_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <com.android.settings.gps.view.JSatelliteProgBar android:id="@+id/gps_progress_5" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_progress_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/gps_type_view_5" android:visibility="invisible" android:layout_width="30px" android:layout_height="30px" android:src="@drawable/set_satellite_bd"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_strength_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <com.android.settings.gps.view.JSatelliteProgBar android:id="@+id/gps_progress_6" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_progress_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/gps_type_view_6" android:visibility="invisible" android:layout_width="30px" android:layout_height="30px" android:src="@drawable/set_satellite_bd"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_strength_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <com.android.settings.gps.view.JSatelliteProgBar android:id="@+id/gps_progress_7" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_progress_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/gps_type_view_7" android:visibility="invisible" android:layout_width="30px" android:layout_height="30px" android:src="@drawable/set_satellite_bd"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_strength_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <com.android.settings.gps.view.JSatelliteProgBar android:id="@+id/gps_progress_8" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_progress_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/gps_type_view_8" android:visibility="invisible" android:layout_width="30px" android:layout_height="30px" android:src="@drawable/set_satellite_bd"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_strength_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <com.android.settings.gps.view.JSatelliteProgBar android:id="@+id/gps_progress_9" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_progress_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/gps_type_view_9" android:visibility="invisible" android:layout_width="30px" android:layout_height="30px" android:src="@drawable/set_satellite_bd"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_strength_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <com.android.settings.gps.view.JSatelliteProgBar android:id="@+id/gps_progress_10" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_progress_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/gps_type_view_10" android:visibility="invisible" android:layout_width="30px" android:layout_height="30px" android:src="@drawable/set_satellite_bd"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_strength_11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <com.android.settings.gps.view.JSatelliteProgBar android:id="@+id/gps_progress_11" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_progress_11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/gps_type_view_11" android:visibility="invisible" android:layout_width="30px" android:layout_height="30px" android:src="@drawable/set_satellite_bd"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_strength_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <com.android.settings.gps.view.JSatelliteProgBar android:id="@+id/gps_progress_12" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:layout_gravity="center_horizontal" android:id="@+id/gps_sign_progress_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/gps_type_view_12" android:visibility="invisible" android:layout_width="30px" android:layout_height="30px" android:src="@drawable/set_satellite_bd"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:paddingStart="?android:attr/listPreferredItemPaddingStart" android:paddingEnd="?android:attr/listPreferredItemPaddingEnd">
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/set_satellite_img_bd" android:layout_width="35px" android:layout_height="35px" android:src="@drawable/set_satellite_bd"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:id="@+id/satellite_bd_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="0"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/set_satellite_img_gln" android:layout_width="35px" android:layout_height="35px" android:src="@drawable/set_satellite_gln"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:id="@+id/satellite_gln_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="0"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/set_satellite_img_gps" android:layout_width="35px" android:layout_height="35px" android:src="@drawable/set_satellite_gps"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:id="@+id/satellite_gps_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="0"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/set_satellite_img_other" android:layout_width="35px" android:layout_height="35px" android:src="@drawable/set_satellite_ufo"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="14sp" android:id="@+id/satellite_unknow_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="0"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/split_page_item_bk_n" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="20dp" android:paddingStart="?android:attr/listPreferredItemPaddingStart" android:paddingEnd="?android:attr/listPreferredItemPaddingEnd">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="16sp" android:gravity="center" android:id="@+id/gps_lat" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="16sp" android:gravity="center" android:id="@+id/gps_lon" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="16sp" android:gravity="center" android:id="@+id/gps_sign" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="16sp" android:id="@+id/gps_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:background="@drawable/split_page_item_bk_n" android:paddingTop="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="10dp" android:minHeight="?android:attr/listPreferredItemHeightSmall" android:paddingStart="?android:attr/listPreferredItemPaddingStart" android:paddingEnd="?android:attr/listPreferredItemPaddingEnd">
+        <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="16sp" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gps_auto_sync_time"/>
+        <Switch android:id="@+id/gps_auto_time_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:thumb="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:track="@drawable/setting_button_track" android:splitTrack="true"/>
+    </RelativeLayout>
+</LinearLayout>

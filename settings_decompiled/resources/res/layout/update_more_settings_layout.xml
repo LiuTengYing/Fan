@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="40dp" android:paddingRight="40dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/wifi_download_ly" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_weight="1">
+        <TextView android:textSize="22dp" android:textColor="@color/title_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update_only_wifi_download" android:layout_centerVertical="true"/>
+        <Switch android:layout_gravity="center_vertical" android:id="@+id/only_wifi_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:thumb="@drawable/settingslib_switch_thumb" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:track="@drawable/settingslib_switch_track"/>
+        <ImageView android:background="#19000000" android:layout_width="match_parent" android:layout_height="2dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/slience_update_ly" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_weight="1">
+        <TextView android:textSize="22dp" android:textColor="@color/title_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update_slience_download" android:layout_centerVertical="true"/>
+        <Switch android:layout_gravity="center_vertical" android:id="@+id/slience_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:thumb="@drawable/settingslib_switch_thumb" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:track="@drawable/settingslib_switch_track"/>
+        <ImageView android:background="#19000000" android:layout_width="match_parent" android:layout_height="2dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/check_date_ly" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_weight="1">
+        <TextView android:textSize="22dp" android:textColor="@color/title_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update_check_time" android:layout_centerVertical="true"/>
+        <TextView android:textSize="22dp" android:textColor="@color/title_text_color" android:id="@+id/check_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update_content_log_title" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <ImageView android:background="#19000000" android:layout_width="match_parent" android:layout_height="2dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/clear_data_ly" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_weight="1" android:layout_below="@+id/slience_update_ly">
+        <TextView android:textSize="22dp" android:textColor="@color/title_text_color" android:id="@+id/clear_update_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/update_clear_data" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <ImageView android:background="#19000000" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="2dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="20sp" android:textColor="@color/title_text_color" android:gravity="center_horizontal" android:id="@+id/backcar_camera_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="20dp"/>
+    <TextView android:textSize="18sp" android:textColor="@color/title_text_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="@string/factory_backcar_camera_confirm" android:layout_below="@+id/backcar_camera_title"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="20dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="18sp" android:gravity="center" android:id="@+id/backcar_camera_confirm" android:background="@drawable/btn_normal" android:layout_width="200px" android:layout_height="wrap_content" android:text="@string/okay"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="18sp" android:gravity="center" android:id="@+id/backcar_camera_cancel" android:background="@drawable/btn_normal" android:layout_width="200px" android:layout_height="wrap_content" android:text="@string/cancel"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

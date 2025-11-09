@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="20sp" android:textColor="@color/title_text_color" android:gravity="center_horizontal" android:id="@+id/sound_speed_volume_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="20dp"/>
+    <RelativeLayout android:id="@+id/sound_speed_close_layout" android:paddingLeft="40dp" android:paddingRight="40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+        <CheckBox android:id="@+id/sound_speed_close" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_style" android:layout_alignParentEnd="true"/>
+        <TextView android:textSize="18sp" android:textColor="@color/title_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sound_speed_volume_close"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/sound_speed_low_layout" android:paddingLeft="40dp" android:paddingRight="40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+        <CheckBox android:id="@+id/sound_speed_low" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_style" android:layout_alignParentEnd="true"/>
+        <TextView android:textSize="18sp" android:textColor="@color/title_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sound_speed_volume_low"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/sound_speed_middle_layout" android:paddingLeft="40dp" android:paddingRight="40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+        <CheckBox android:id="@+id/sound_speed_middle" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_style" android:layout_alignParentEnd="true"/>
+        <TextView android:textSize="18sp" android:textColor="@color/title_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sound_speed_volume_middle"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/sound_speed_high_layout" android:paddingLeft="40dp" android:paddingRight="40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+        <CheckBox android:id="@+id/sound_speed_high" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_style" android:layout_alignParentEnd="true"/>
+        <TextView android:textSize="18sp" android:textColor="@color/title_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sound_speed_volume_high"/>
+    </RelativeLayout>
+</LinearLayout>

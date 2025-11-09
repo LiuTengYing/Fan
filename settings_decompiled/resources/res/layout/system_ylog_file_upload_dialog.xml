@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="20sp" android:textColor="@color/title_text_color" android:gravity="center_horizontal" android:id="@+id/ylog_upload_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="20dp" android:text="@string/ylog_upload_title" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="18sp" android:textColor="@color/title_text_color" android:id="@+id/ylog_upload_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:text="@string/ylog_upload_content" android:layout_below="@+id/ylog_upload_title"/>
+    <Button android:textSize="18sp" android:gravity="center" android:id="@+id/ylog_upload_confirm" android:background="@drawable/btn_normal" android:layout_width="200px" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/okay" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

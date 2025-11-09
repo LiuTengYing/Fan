@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="20sp" android:textColor="@color/title_text_color" android:gravity="center_horizontal" android:id="@+id/select_app_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="20dp" android:text="@string/common_navi_app" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="20sp" android:textColor="@color/title_text_color" android:id="@+id/select_app_reset" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="20dp" android:text="Reset" android:layout_alignParentRight="true"/>
+    <GridView android:id="@+id/navi_app_gridview" android:layout_width="match_parent" android:layout_height="wrap_content" android:verticalSpacing="18dp" android:numColumns="5" android:layout_above="@+id/navi_app_select_layout" android:layout_below="@+id/select_app_title"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/navi_app_select_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="20dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="18sp" android:gravity="center" android:id="@+id/navi_app_confirm" android:background="@drawable/btn_normal" android:layout_width="200px" android:layout_height="wrap_content" android:text="@string/okay"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="18sp" android:gravity="center" android:id="@+id/navi_app_cancel" android:background="@drawable/btn_normal" android:layout_width="200px" android:layout_height="wrap_content" android:text="@string/cancel"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

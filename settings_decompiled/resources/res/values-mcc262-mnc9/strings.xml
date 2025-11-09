@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="roaming_warning">Click to use data while roaming,check with your network provider for pricing.</string>
+    <string name="wifi_calling_settings_title">Vodafone WiFi Calling</string>
+</resources>

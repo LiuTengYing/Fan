@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:id="@+id/protocol_item_layout" android:background="@drawable/protocol_item_press" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <CheckBox android:id="@+id/protocol_select" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/protocol_select" android:layout_centerVertical="true"/>
+    <TextView android:textSize="18sp" android:textColor="#ffffff" android:ellipsize="marquee" android:id="@+id/protocol_name" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/common_default_usb_conn_none" android:scrollHorizontally="true" android:singleLine="true" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever"/>
+</LinearLayout>

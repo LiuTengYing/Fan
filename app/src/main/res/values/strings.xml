@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Info -->
+    <string name="app_name">Fan Control</string>
+    
+    <!-- Temperature Display -->
+    <string name="cpu_temperature_initial">CPU: 49.1℃</string>
+    <string name="cpu_temperature_text">CPU: %.1f℃</string>
+    <string name="cpu_temperature">CPU: %1$s℃</string>
+    <string name="cpu_temperature_na">CPU: N/A</string>
+    
+    <!-- Mode Control -->
+    <string name="auto_mode_enabled">Auto Mode Enabled</string>
+    <string name="auto_mode_disabled">Auto Mode Disabled</string>
+    <string name="device_auto_mode_on">Device Auto Mode ON</string>
+    <string name="device_auto_mode_off">Device Auto Mode OFF</string>
+    <string name="switched_to_celsius">Switched to Celsius</string>
+    <string name="switched_to_fahrenheit">Switched to Fahrenheit</string>
+    
+    <!-- Fan Control -->
+    <string name="failed_to_switch_mode">Failed to switch mode</string>
+    <string name="failed_to_control_fan">Failed to control fan</string>
+    
+    <!-- Temperature Threshold -->
+    <string name="temperature_threshold_hint">When temperature reaches %1$s, the fan will automatically turn on in auto mode\nLong press to modify threshold</string>
+    <string name="set_temperature_threshold">Set Temperature Threshold</string>
+    <string name="enter_celsius_value">Enter Celsius value</string>
+    <string name="enter_fahrenheit_value">Enter Fahrenheit value</string>
+    <string name="temperature_threshold_updated">Temperature threshold updated and synced to device</string>
+    <string name="temperature_threshold_synchronized">Temperature threshold synchronized: %1$s°C</string>
+    <string name="failed_sync_temperature_threshold">Failed to sync temperature threshold</string>
+    <string name="please_enter_valid_number">Please enter a valid number</string>
+    
+    <!-- Dialog Buttons -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    
+    <!-- Device Status -->
+    <string name="device_running">RUNNING</string>
+    <string name="device_stopped">STOPPED</string>
+    <string name="device_control_detected">Device control detected, exiting manual mode</string>
+    
+    <!-- Content Descriptions for Accessibility -->
+    <string name="fan_back_cover_desc">Fan back cover</string>
+    <string name="fan_light_desc">Fan light</string>
+    <string name="fan_blades_desc">Fan blades</string>
+    <string name="fan_front_cover_desc">Fan front cover</string>
+    <string name="indicator_light_desc">Indicator light</string>
+    <string name="left_switch_base_desc">Left switch base</string>
+    <string name="left_switch_desc">Left switch</string>
+    <string name="right_switch_base_desc">Right switch base</string>
+    <string name="right_switch_desc">Right switch</string>
+    <string name="auto_switch_base_desc">Auto switch base</string>
+    <string name="auto_switch_desc">Auto switch</string>
+    <string name="left_arrow_desc">Left arrow</string>
+    <string name="right_arrow_desc">Right arrow</string>
+    <string name="hint_button_desc">Hint button</string>
+    <string name="auto_mode_switch_desc">Auto mode switch</string>
+    <string name="temp_unit_switch_desc">Temperature unit switch</string>
+</resources>
