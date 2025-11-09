@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" android:title="@string/parallel_app" android:key="parallel_app_settings" settings:controller="com.android.settings.applications.parallelapp.ManageParallelAppsPreferenceController" settings:searchable="false">
-    <com.android.settingslib.widget.TopIntroPreference android:title="@string/parallel_app_support" android:key="support_app"/>
-    <PreferenceCategory android:key="app_list" android:order="10" settings:searchable="false"/>
-</PreferenceScreen>

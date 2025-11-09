@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
-    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <include layout="@layout/wifi_network_config"/>
-        <include layout="@android:layout/alert_dialog_holo"/>
-    </LinearLayout>
-</androidx.core.widget.NestedScrollView>

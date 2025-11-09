@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:attr/listPreferredItemHeight" android:paddingStart="?android:attr/listPreferredItemPaddingStart" android:paddingEnd="?android:attr/listPreferredItemPaddingEnd">
-    <Button android:layout_gravity="start|center_vertical" android:id="@+id/reset_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/accessibility_text_reading_reset_button_title" android:drawablePadding="9dp" android:drawableStart="@drawable/ic_history" android:drawableTint="@color/settingslib_btn_colored_text_material" android:paddingVertical="14dp" style="@style/ActionPrimaryButton"/>
-</FrameLayout>

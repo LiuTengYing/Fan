@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" xmlns:android="http://schemas.android.com/apk/res/android" android:title="@string/app_auto_run_management" android:key="battery_saver_list">
-    <Preference android:title="@string/app_auto_run_optimization" android:key="app_auto_run"/>
-    <Preference android:title="@string/app_as_lunch_optimization" android:key="app_as_lunch"/>
-</PreferenceScreen>

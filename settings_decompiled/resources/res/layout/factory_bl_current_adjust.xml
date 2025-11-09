@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/split_page_item_bk" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="?android:attr/listPreferredItemPaddingEnd" android:minHeight="?android:attr/listPreferredItemHeightSmall" android:paddingStart="?android:attr/listPreferredItemPaddingStart" android:paddingEnd="?android:attr/listPreferredItemPaddingEnd">
-    <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="18sp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/factory_bl_current_adjust" android:singleLine="true" android:layout_weight="1"/>
-    <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3">
-        <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:textSize="16sp" android:gravity="center" android:id="@+id/door_lock_password" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="40dp" android:hint="@string/factory_door_lock_password_tint" android:singleLine="true" android:layout_alignParentRight="true"/>
-    </RelativeLayout>
-</LinearLayout>

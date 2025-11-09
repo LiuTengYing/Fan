@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" android:title="@string/three_pointer_screenshot_title">
-    <SwitchPreference android:title="@string/three_pointer_screenshot_title" android:key="gesture_three_pointer_screenshot" android:summary="@string/three_pointer_screenshot_title_summary" settings:controller="com.android.settings.gestures.ThreePointerScreenshotPreferenceController" settings:keywords="@string/keywords_gesture"/>
-</PreferenceScreen>

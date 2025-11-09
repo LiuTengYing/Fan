@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" android:title="@string/about_device_syu_info">
-    <PreferenceCategory android:title="@string/my_device_info_device_details_category_title" android:selectable="false" android:key="device_detail_category">
-        <Preference android:persistent="false" android:title="@string/imei_information_title" android:key="imei_info" android:order="1">
-            <intent android:targetPackage="com.android.settings" android:targetClass="com.android.settings.Settings$ImeiInformationActivity"/>
-        </Preference>
-        <Preference android:title="@string/sim_status_title" android:key="sim_status" android:summary="@string/summary_placeholder" android:order="18" settings:enableCopying="true" settings:keywords="@string/keywords_sim_status"/>
-    </PreferenceCategory>
-</PreferenceScreen>

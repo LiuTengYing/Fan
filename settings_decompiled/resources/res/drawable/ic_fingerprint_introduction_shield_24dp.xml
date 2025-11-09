@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/res_0x7f08001c_ic_fingerprint_introduction_shield_24dp__0">
-    <target android:name="time_group" android:animation="@drawable/res_0x7f08001d_ic_fingerprint_introduction_shield_24dp__1"/>
-</animated-vector>

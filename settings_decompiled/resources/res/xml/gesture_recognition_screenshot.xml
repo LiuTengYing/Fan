@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" android:title="@string/text_screenshot_title" android:key="gesture_recognition">
-    <com.unisoc.settings.smartcontrols.ImageViewPagerPreference android:selectable="false" android:key="gesture_preview"/>
-    <SwitchPreference android:persistent="false" android:title="@string/text_screenshot_title" android:key="sp_screenshot"/>
-</PreferenceScreen>

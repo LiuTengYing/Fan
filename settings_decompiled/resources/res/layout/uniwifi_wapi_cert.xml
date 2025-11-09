@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" android:id="@+id/uniwifi_wapi_cert" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/wifi_item">
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uniwifi_wapi_as_certificate" style="@style/wifi_item_label"/>
-    <Spinner android:id="@+id/uniwifi_wapi_as_cert" android:layout_width="match_parent" android:layout_height="wrap_content" android:prompt="@string/uniwifi_wapi_as_certificate" style="@style/wifi_item_spinner"/>
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uniwifi_wapi_user_certificate" style="@style/wifi_item_label"/>
-    <Spinner android:id="@+id/uniwifi_wapi_user_cert" android:layout_width="match_parent" android:layout_height="wrap_content" android:prompt="@string/uniwifi_wapi_user_certificate" style="@style/wifi_item_spinner"/>
-</LinearLayout>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:app="http://schemas.android.com/apk/res/android">
-    <item app:state_pressed="true" app:drawable="@drawable/select_item_dialog_bk_no_radius"/>
-    <item app:drawable="@color/translucent"/>
-</selector>

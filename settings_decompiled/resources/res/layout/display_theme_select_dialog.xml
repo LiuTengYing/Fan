@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/select_item_dialog_bk" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="40dp" android:layout_marginTop="40dp" android:layout_marginRight="40dp">
-    <TextView android:textSize="18sp" android:textColor="@color/title_text_color" android:gravity="center" android:id="@+id/select_app_settings" android:layout_width="match_parent" android:layout_height="0dp" android:text="@string/theme_custom_settings" android:layout_weight="1"/>
-    <TextView android:textSize="18sp" android:textColor="@color/title_text_color" android:gravity="center" android:id="@+id/select_app_bt" android:layout_width="match_parent" android:layout_height="0dp" android:text="@string/theme_custom_bt" android:layout_weight="1"/>
-    <TextView android:textSize="18sp" android:textColor="@color/title_text_color" android:gravity="center" android:id="@+id/select_app_dsp" android:layout_width="match_parent" android:layout_height="0dp" android:text="@string/theme_custom_eq" android:layout_weight="1"/>
-    <TextView android:textSize="18sp" android:textColor="@color/title_text_color" android:gravity="center" android:id="@+id/select_app_all" android:layout_width="match_parent" android:layout_height="0dp" android:text="@string/theme_custom_all" android:layout_weight="1"/>
-</LinearLayout>

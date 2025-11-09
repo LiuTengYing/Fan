@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
-    <ImageView android:id="@+id/wifi_connect_state" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="10dp" android:src="@drawable/ic_wifi_connect" android:scaleType="centerCrop" android:layout_centerVertical="true"/>
-    <TextView android:textSize="18sp" android:textColor="@color/title_text_color" android:gravity="center_vertical" android:id="@+id/wifi_name" android:layout_width="wrap_content" android:layout_height="90dp" android:layout_marginLeft="10dp" android:maxWidth="200dp" android:singleLine="true" android:layout_toRightOf="@+id/wifi_connect_state"/>
-    <TextView android:textSize="24sp" android:textColor="@color/title_text_color" android:gravity="center_vertical" android:id="@+id/wifi_state" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="90dp" android:layout_marginRight="80dp" android:singleLine="true" android:layout_alignParentRight="true"/>
-    <ImageView android:id="@+id/wifi_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_wifi_dialog_lock" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="80dp"/>
-    <ImageView android:id="@+id/wifi_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wifi_sign_full" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="20dp"/>
-</RelativeLayout>

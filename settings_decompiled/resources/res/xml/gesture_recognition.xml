@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="@string/gesture_recognition" android:key="gesture_recognition">
-    <PreferenceCategory android:title="@string/gesture_recognition_classification" android:order="200">
-        <Preference android:title="@string/gesture_screen_slide" android:key="screen_silde" android:fragment="com.unisoc.settings.smartcontrols.GestureRecognitionSlideScreenFragment"/>
-        <Preference android:title="@string/text_screenshot_title" android:key="screenchut" android:fragment="com.unisoc.settings.smartcontrols.GestureRecognitionScreenShotFragment"/>
-        <Preference android:title="@string/text_play_title" android:key="gesture_play" android:fragment="com.unisoc.settings.smartcontrols.GestureRecognitionPlayFragment"/>
-    </PreferenceCategory>
-</PreferenceScreen>

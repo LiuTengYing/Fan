@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
-    <TextView android:textSize="16sp" android:textColor="@color/title_text_color" android:layout_gravity="center_vertical" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:text="@string/backlight_control" style="@style/PreferenceSummaryTextStyle"/>
-</LinearLayout>

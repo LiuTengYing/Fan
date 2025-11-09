@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
-    <TextView android:textSize="20sp" android:textColor="@color/title_text_color" android:gravity="center_horizontal" android:id="@+id/select_app_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="20dp" android:text="@string/common_automatic_start_settings"/>
-    <GridView android:id="@+id/navi_app_gridview" android:layout_width="match_parent" android:layout_height="wrap_content" android:verticalSpacing="18dp" android:numColumns="2"/>
-</LinearLayout>

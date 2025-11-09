@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="@string/pocket_mode" android:key="pocket_mode_preference">
-    <SwitchPreference android:persistent="false" android:title="@string/touch_disable" android:key="touch_disable" android:summary="@string/touch_disable_summary"/>
-    <SwitchPreference android:persistent="false" android:title="@string/smart_bell" android:key="smart_bell" android:summary="@string/smart_bell_summary"/>
-    <SwitchPreference android:persistent="false" android:title="@string/power_saving" android:key="power_saving" android:summary="@string/power_saving_summary"/>
-</PreferenceScreen>

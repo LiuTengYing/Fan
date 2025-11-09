@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" android:title="@string/secondary_screen_title" android:key="network_provider_and_internet_screen">
-    <com.android.settings.widget.LayoutPreferences android:layout="@layout/settings_perfeerence_category_title_secondary_applications" android:selectable="false" android:order="-160"/>
-    <com.android.settingslib.RestrictedPreference android:title="@string/secondary_screen_app_setting" android:key="secondary_screen_app_list" android:order="-150" android:fragment="com.android.settings.secondaryscreen.SecondaryScreenDashboardFragment"/>
-    <com.android.settings.widget.LayoutPreferences android:layout="@layout/settings_perfeerence_category_title_secondary_wallpaper" android:selectable="false" android:order="-140"/>
-    <com.android.settingslib.RestrictedPreference android:title="@string/secondary_screen_wallpaper_setting" android:key="secondary_screen_wallpaper" android:order="-130" android:fragment="com.android.settings.secondaryscreen.SecondaryWallpaperDashboardFragment"/>
-</PreferenceScreen>

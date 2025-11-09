@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" android:title="@string/backlight_screensaver" android:key="display_settings_screensaver">
-    <com.android.settingslib.RestrictedSwitchPreference android:title="@string/backlight_screensaver_switch" android:key="screensaver_switch"/>
-    <com.android.settingslib.RestrictedSwitchPreference android:title="@string/backlight_auto_screensaver" android:key="auto_screensaver"/>
-    <PreferenceCategory android:title="@string/backlight_screensaver_preview">
-        <com.android.settingslib.widget.LayoutPreference android:layout="@layout/display_screensaver_preview" android:key="screensaver_preview"/>
-    </PreferenceCategory>
-</PreferenceScreen>

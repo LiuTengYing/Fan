@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/screen_item_ly" android:background="@drawable/select_bk_no_corner" android:layout_width="wrap_content" android:layout_height="wrap_content">
-    <ImageView android:id="@+id/img" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-</RelativeLayout>
